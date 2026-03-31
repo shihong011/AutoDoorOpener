@@ -9,12 +9,12 @@ class esp32():
 
     def open(self):
         res = requests.get(f"http://{self.ip}:80/open")
-        print(res.status_code)
+        #print(res.status_code)
         self.is_open = True
     
     def close(self):
         res = requests.get(f"http://{self.ip}:80/close")
-        print(res.status_code)
+        #print(res.status_code)
         self.is_open = False
 
 if __name__ == "__main__":
